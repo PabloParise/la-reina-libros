@@ -1,6 +1,6 @@
-/* ------
-MAIN
--------*/
+/* -----------
+    GENERAL
+------------*/
 
 * { 
     box-sizing: border-box;
@@ -81,7 +81,7 @@ body {
     .navbarLink {
         display: block;
         padding: .8em .8em;
-        border-top: 1px solid white;
+        border-top: 1px solid rgba(0,0,0,0.60);
     }
     .navbarLogo {
         height: 50px;
@@ -103,7 +103,8 @@ body {
 }
 .bannerImage {
     width: 100%;
-    height: auto;       
+    height: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.60);    
 }
 .bannerText {
     position: absolute;
@@ -120,58 +121,26 @@ body {
     font-size: 6vw;  
     font-weight: lighter; 
 }
-#books {
-    position: relative;
-    top: 220px;
-    font-size: 5vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    color: black;
-    text-align: left;
-}
-#books img {
-    width: 350px;
-    height: auto;
-}
-.productsElements{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 15%;
-    padding-right: 15%;
-    justify-content: center;
 
+/* -----------
+    SECTION
+------------*/
+
+.booksArticle {
+margin-top: 10em;
+padding: 0 2.5em;
 }
-.productsCard{
-    width: 380px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 5px;
-    padding: 4px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    background-color: white;
+
+.booksArticle  h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
 }
-.productsDescription {
-    color: black;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px;
-    text-shadow: none;
-    text-align: left;
-}
-.productsDescription button {
-    display: inline-block;
-    background-color: mistyrose;
-    color: black;
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-}
-.productsDescription button:hover {
-    background-color: rgba(205, 68, 205, 0.801);
-    color: white;
-}
+
+
+/* -----------
+    FORM
+------------*/
 
 #subscribe {
     display: flex;
