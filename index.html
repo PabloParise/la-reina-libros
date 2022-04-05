@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--SEO Tags-->
+    <meta name="description" content="Tienda Virtual de libros">
+    <meta name="author" content="Pablo Parise">
+
     <title>La Reina Libros</title>
-    <link rel="stylesheet" href="./styles.css">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header id="header">
-        <nav id="nav-bar">
-            <div class="logo">
-                <a href="#"><img class="logo-img" src="./images/booksLogo.png" alt="Logo"></a>
-            </div>
-            <ul class="nav-list" id="nav-list">
-                <li><a class="nav-link" href="#">Inicio</a></li>
-                <li><a class="nav-link" href="#books">Libros</a></li>
-                <li><a class="nav-link" href="#subscribe">Nosotros</a></li>
-            </ul>
-            <div class="menu" id="toggle-button">
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-            </div>
-        </nav>
-        <script src="./js/index.js"></script>
-    </header>
-    <section>
-        <div class="banner">
-            <img src="./images/banner1.png" alt="banner">
+    <nav class="navbar">
+        <a href="index.html"><img class="navbarLogo" src="./images/books-logo.png" alt="LRL Logo"></a>
+        <ul class="navbarList" id="navbarList">
+            <li><a class="navbarLink" href="#">Inicio</a></li>
+            <li><a class="navbarLink" href="#books">Libros</a></li>
+            <li><a class="navbarLink" href="#subscribe">Nosotros</a></li>
+        </ul>
+        <div class="navbarMenu" id="menuToggle">
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="headerBanner">
+            <img class ="bannerImage" src="./images/banner1.png" alt="banner image">
             <div class="bannerText">
-                <h1 class="bannerTextName">
-                    La 
-                    <br>
-                    Reina
-                    <br>
+                <h1 class="bannerTitle">
+                    La<br>Reina
                 </h1>
-                <h2 class="bannerTextSecondName">
+                <h2 class="bannerSubtitle">
                     Libros
                 </h2>
             </div>
         </div>
-
+    </header>
+    <section>
         <div id="books">
             Libros
             <div class="productsElements">
@@ -95,5 +99,9 @@
             </div>
         </div>
     </section> 
+
+    <!-- Scripts-->
+    <script src="./js/index.js"></script> <!--Custom JS-->
+
 </body>
 </html>

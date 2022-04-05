@@ -1,5 +1,5 @@
-const $toggleButton=document.getElementById("toggle-button")
-const $NavList=document.getElementById("nav-list")
+const $toggleButton=document.getElementById("menuToggle")
+const $NavList=document.getElementById("navbarList")
 
 $toggleButton.addEventListener("click", handleMenu)
 
