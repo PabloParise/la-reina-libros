@@ -7,8 +7,9 @@
     padding: 0; 
     margin: 0;
 }
+
 body {
-    /*background-image: url(./images/);*/
+    background-color: rgb(235, 235, 235);
 }
 
 /* -----------
@@ -104,7 +105,8 @@ body {
 .bannerImage {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid rgba(0,0,0,0.60);    
+    border-bottom: 1px solid rgba(0,0,0,0.60);
+    
 }
 .bannerText {
     position: absolute;
@@ -127,10 +129,15 @@ body {
     SECTION
 ------------*/
 
-.booksArticle {
+.booksArticle:first-child{
 margin-top: 10em;
 padding: 0 4em;
 }
+
+.booksArticle{
+    margin-top: 2em;
+    padding: 0 4em;
+    }
 
 .booksArticle  h3{
     font-family: 'Open Sans', sans-serif;
