@@ -129,13 +129,85 @@ body {
 
 .booksArticle {
 margin-top: 10em;
-padding: 0 2.5em;
+padding: 0 4em;
 }
 
 .booksArticle  h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
+    padding-bottom: 1.5rem;
 }
+
+.booksContainer {
+    padding: 1em;
+    width: 80%;
+    overflow: hidden;
+}
+
+.booksList {
+    display: flex;
+    list-style-type: none;
+    width: 100%;  
+}
+
+.bookThumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.bookTwo {
+    position: absolute;
+    margin-left: 8%;
+}
+
+.bookThree {
+    position: absolute;
+    margin-left: 16%;
+}
+
+.bookFour {
+    position: absolute;
+    margin-left: 24%;
+}
+
+.bookFive {
+    position: absolute;
+    margin-left: 32%;
+}
+
+.bookSix {
+    position: absolute;
+    margin-left: 40%;
+}
+
+.bookSeven {
+    position: absolute;
+    margin-left: 48%;
+}
+
+.booksLink {
+    display: flex;
+    position: absolute;
+    margin-left: 56%;
+    opacity: 55%;
+}
+
+.bookThumbnail:hover {
+    z-index: 2;
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.bookThumbnail:not(:hover) {
+    transform: scale(1);
+    transition: .2s;
+}
+
+.booksLink:hover {
+    opacity: 95%;
+}
+
+
 
 
 /* -----------
