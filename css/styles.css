@@ -8,13 +8,13 @@
     margin: 0;
 }
 
-.grid {
+.bodyGrid {
     display: grid;
-    grid-template-areas: "n n n"
-                         "h h h"
-                         "b b s"
-                         "b b s"
-                         "f f f";
+    grid-template-areas: "nav nav nav"
+                         "head head head"
+                         "book book side"
+                         "book book side"
+                         "foot foot foot";
 }
 
 /* -----------
@@ -22,7 +22,7 @@
 ------------*/
 
 .navbar {
-    grid-area: n;
+    grid-area: nav;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -104,7 +104,7 @@
 ------------*/
 
 header {
-    grid-area: h;
+    grid-area: head;
 }
 
 .headerBanner {
@@ -139,7 +139,7 @@ header {
     SECTION
 ------------*/
 section {
-    grid-area: b;
+    grid-area: book;
 }
 
 .booksArticle:first-child{
@@ -233,7 +233,7 @@ padding: 0 4em;
 ------------*/
 
 aside {
-    grid-area: s;
+    grid-area: side;
     background-color: black;
 }
 
@@ -244,8 +244,37 @@ aside {
 ------------*/
 
 footer {
-    grid-area: f;
-    background-color: gray;
+    grid-area: foot;
+    background-color: #C09F80;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-areas: "about faq acc"
+                         "soc soc soc";
+    padding: 2em;
+}
+
+.footerContainer h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.footerAbout {
+    grid-area: about;
+}
+
+.footerFaq {
+    grid-area: faq;
+}
+
+.footerAccount {
+    grid-area: acc;
+}
+
+.footerSocial {
+    grid-area: soc;
 }
 
 /* -----------
