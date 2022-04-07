@@ -251,14 +251,37 @@ footer {
 .footerContainer {
     display: grid;
     grid-template-areas: "about faq acc"
-                         "soc soc soc";
+                         "soc soc soc"
+                         "copy copy copy";
+    row-gap: 2em;
+    justify-items: center;
     padding: 2em;
+    color: white;
 }
 
 .footerContainer h6 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.footerContainer ul {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.footerContainer li {
+    margin-top: 1em;
+}
+
+.footerContainer a {
+    text-decoration: none;
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.footerContainer a:hover {
+    color: #565656;
 }
 
 .footerAbout {
@@ -275,6 +298,31 @@ footer {
 
 .footerSocial {
     grid-area: soc;
+    display: flex;
+    align-items: center;
+
+}
+
+.footerSocial .fa-stack .fa-stack-1x {
+    color: #ffffff;
+	transition: all 0.2s ease;
+}
+
+.footerSocial .fa-stack .fa-stack-2x {
+	color: #565656;
+	transition: all 0.2s ease;
+}
+
+.footerSocial .fa-stack:hover .fa-stack-1x {
+	color: #565656;
+}
+
+.footerSocial .fa-stack:hover .fa-stack-2x {
+    color: #ffffff;
+}
+
+.footerCopyright {
+    grid-area: copy;
 }
 
 /* -----------
