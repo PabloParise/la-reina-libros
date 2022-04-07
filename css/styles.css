@@ -323,6 +323,26 @@ footer {
 
 .footerCopyright {
     grid-area: copy;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 4em;
+    border: 1px solid #646464;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.developerInfo {
+    display: flex;
+    align-items: center;
+    font-family: Outfit, "Open Sans", sans-serif;
+    font-size: 1.2em;
+}
+
+.developerInfo img {
+    height: 3.5em;
+    margin-left: .8em;
 }
 
 /* -----------
