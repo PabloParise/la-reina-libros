@@ -10,7 +10,7 @@
     <meta name="description" content="Tienda Virtual de libros">
     <meta name="author" content="Pablo Parise">
 
-    <title>La Reina Libros</title>
+    <title>La Reina Libros - Inicio</title>
 
     <!--Styles-->
     <link rel="stylesheet" href="css/normalize.css">
@@ -21,15 +21,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/e77625ad44.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="grid">
+
     <nav class="navbar">
         <a href="index.html"><img class="navbarLogo" src="./images/books-logo.png" alt="LRL Logo"></a>
         <ul class="navbarList" id="navbarList">
             <li><a class="navbarLink" href="#">Inicio</a></li>
-            <li><a class="navbarLink" href="#books">Libros</a></li>
-            <li><a class="navbarLink" href="#subscribe">Nosotros</a></li>
+            <li><a class="navbarLink" href="books.html">Libros</a></li>
+            <li><a class="navbarLink" href="about.html">Nosotros</a></li>
+            <li><a class="navbarLink" href="contact.html">Contacto</a></li>
         </ul>
         <div class="navbarMenu" id="menuToggle">
             <div class="menuLine"></div>
@@ -38,7 +43,7 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header>
         <div class="headerBanner">
             <img class ="bannerImage" src="./images/banner1.png" alt="banner image">
             <div class="bannerText">
@@ -53,7 +58,7 @@
     </header>
 
     <section>
-        <article class="booksArticle firstArticle">
+        <article class="booksArticle">
             <h3>Populares</h3>
             <div class="booksContainer">
                 <ul class="booksList">
@@ -83,26 +88,60 @@
                 </ul>
             </div> <!--end of books container-->
         </article>
+    </section>
 
-        <!---
-        <div id="subscribe">
-            <div class="subscribeCard">
-                Suscribite 
-                <form id='form' action="https://www.freecodecamp.com/email-submit">
-                    <input id="formName" type="text" name="formName" placeholder="Enter your name">
-                    <br>
-                    <input id="formAdress" type="text" name="formAdress" placeholder="Enter your adress">
-                    <br>
-                    <input id="formNumber" type="number" name="formNumber" placeholder="Enter your phone number">
-                    <br>
-                    <input id="email" type="email" name="email" placeholder="Enter your email">
-                    <br>
-                    <input id="submit" type="submit">
-                </form>
+    <aside>
+        <div></div>
+    </aside>
+
+        <!-- Footer -->
+    <footer>
+        <div class="footerContainer">
+            <div class="footerInfo">
+                <div class="footerAboutUs">
+                    <h6>Sobre nosotros</h6>
+                    <ul>
+                        <li><a href="about.html">Quiénes somos</a></li>
+                        <li><a href="contact.html">Contáctanos</a></li>
+                        <li><a href="contact.html">Política de privacidad</a></li>
+                    </ul>
+                </div> <!--end About Us container-->
+                <div class="footerFaq">
+                    <h6>Preguntas frecuentes</h6>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div> <!--end FAQ container-->
+                <div class="footerAccount">
+                    <h6>Mi cuenta</h6>
+                    <ul>
+                        <li><a href="">Mis datos</a></li>
+                        <li><a href="">Mis pedidos</a></li>
+                    </ul>
+                </div> <!--end of My Account container-->
             </div>
-        </div> -->
-
-    </section> 
+            <div class="footerSocial">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x"></i>
+                </a>
+            </div> <!-- end of footer social -->
+        </div> <!-- end of footer container -->
+    </footer> <!-- end of footer -->  
+    <!-- end of footer -->
+    
+    
+        <!-- Copyright -->
+        <div class="copyright bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © <a class="no-line" href="">Pablo Parise</a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->        
+        </div> <!-- end of copyright --> 
+        <!-- end of copyright -->
 
     <!-- Scripts-->
     <script src="./js/index.js"></script> <!--Custom JS-->
