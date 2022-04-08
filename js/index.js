@@ -13,15 +13,10 @@ function handleMenu() {
  }
 
 //Navbar style while scrolling 
-
-const $navbarLogo = document.getElementById("navbarLogo")
-const $navbarContainer = document.getElementById("navbarContainer")
-const $navbarPosition = $navbarContainer.getBoundingClientRect() //method that provides the element's position and its relative position to the viewport.
-
-function navbarTop () {
-    if ($navbarPosition.top === 0) {
-        $navbarLogo.classList.add("navbarSticked")
-    };
-}
-
-document.addEventListener('scroll', navbarTop)
+$(window).scroll(function() {
+    if ($(".navbarContainer").position().top > 186) {  //186 is the navbar absolute position from top of the window 
+        $(".navbarLogo").addClass("navbarSticked");
+    } else {
+        $(".navbarLogo").removeClass("navbarSticked");
+    }
+});

@@ -151,6 +151,10 @@ header {
     align-items: center;    
 }
 
+.navbarSticked img {
+    height: 3em;
+}
+
 .navbarMenu {
     display: none;
 }
