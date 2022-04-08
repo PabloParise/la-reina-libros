@@ -30,10 +30,15 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em 2em;
-    background-color: rgba(46,38,109,255);
+    background-color: rgba(44,73,77,255);
 }
-.bannerImage {
 
+.bannerImage {
+    padding-left: 2.5em;
+}
+
+.bannerImage img{
+    height: 150px;
 }
 
 .bannerContainer {
@@ -54,7 +59,7 @@ header {
     margin: 0.08em 0.25em;
     padding: 1.2em 1em;
     border-radius: 2%;
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;;
     font-size: 1.1em;
@@ -62,10 +67,16 @@ header {
 
 .bannerButtons li:first-child {
     padding-left: 0;
+    margin-left: 0;
 }
 
-.myAccount {
-    display: none;
+.bannerButtons .fa-solid {
+    color: #bbdfc4;
+	transition: all 0.2s ease;
+}
+
+.bannerButtons .fa-solid:hover {
+    color: #ffffff;
 }
 
 .bannerSearch {
@@ -78,12 +89,14 @@ header {
     width: 100%;
     height: 2.25em;
     padding: .2em;
-    border: 2px solid #565656;
+    border: 2px solid #bbdfc4;
     border-radius: 2px;
 }
 
 .bannerSearch button {
     width: 5em;
+    background-color: #bbdfc4;
+    border: 2px solid #bbdfc4;
 }
 
 
@@ -91,25 +104,20 @@ header {
     NAVBAR
 ------------*/
 
-.navbar {
+
+.navbarContainer {
     grid-area: nav;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    background-color: white;
+    background-color: #bbdfc4;
     font-size: 1.25em;
     width: 100%;
     z-index: 9999;
 }
 
-.navbarLogo {
-    height: 60px;
-    padding-top: 5px;
-    padding-left: 10px;
-}
-.navbarList {
+.navbarContainer ul {
     display: flex;
+    justify-content: center;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -117,17 +125,28 @@ header {
 
 .navbarLink {
     display: inline-block;
-    margin: 0.08em 0.25em;
-    padding: 1.2em 1em;
+    margin: .1em 1.5em;
+    padding: 1em 2em;
     border-radius: 2%;
     color: black;
     text-decoration: none;
 }
 
 .navbarLink:hover{
-    background-color: rgba(205, 68, 205, 0.801);
+    background-color: #6ca7b5;
     color: white;
 }
+
+.navbarLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo img {
+    height: 3em;
+    
+}
+
 .navbarMenu {
     display: none;
 }
