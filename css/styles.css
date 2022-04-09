@@ -146,12 +146,12 @@ header {
     height: 3em;
 }
 
-.navbarSticked {
+.navbarSticky {
     display: flex;
     align-items: center;    
 }
 
-.navbarSticked img {
+.navbarSticky img {
     height: 3em;
 }
 

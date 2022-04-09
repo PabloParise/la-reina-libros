@@ -13,6 +13,7 @@ function handleMenu() {
  }
 
 //Navbar style while scrolling
+/*
 $(function() { 
     $(window).scroll(function() {
         if ($(".navbarContainer").position().top > 186) {  //186 is the navbar absolute position from top of the window 
@@ -21,4 +22,19 @@ $(function() {
             $(".navbarLogo").removeClass("navbarSticked");
         }
     });
-});
+});*/
+
+window.onscroll = function() {myFunction()};
+
+const $navbarContainer = document.getElementById("navbarContainer");
+const $navbarLogo = document.getElementById("navbarLogo");
+
+let $navbarSticky = $navbarContainer.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= $navbarSticky) {
+    $navbarLogo.classList.add("navbarSticky")
+  } else {
+    $navbarLogo.classList.remove("navbarSticky");
+  }
+}
