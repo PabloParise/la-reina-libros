@@ -24,17 +24,19 @@ $(function() {
     });
 });*/
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickyStyle()};
 
 const $navbarContainer = document.getElementById("navbarContainer");
 const $navbarLogo = document.getElementById("navbarLogo");
 
 let $navbarSticky = $navbarContainer.offsetTop;
 
-function myFunction() {
+function stickyStyle() {
   if (window.pageYOffset >= $navbarSticky) {
-    $navbarLogo.classList.add("navbarSticky")
+    $navbarLogo.classList.add("logoSticky")
+    $navbarContainer.classList.add("navbarSticky");
   } else {
-    $navbarLogo.classList.remove("navbarSticky");
+    $navbarLogo.classList.remove("logoSticky");
+    $navbarContainer.classList.remove("navbarSticky");
   }
 }
