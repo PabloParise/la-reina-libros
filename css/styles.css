@@ -204,11 +204,6 @@ section {
     grid-area: sect;
 }
 
-.booksArticle:first-child{
-margin-top: 10em;
-padding: 0 4em;
-}
-
 .booksArticle{
     margin-top: 2em;
     padding: 0 4em;
@@ -296,7 +291,7 @@ padding: 0 4em;
 
 aside {
     grid-area: side;
-    background-color: black;
+    background-color: #7d786d;
 }
 
 
@@ -307,7 +302,7 @@ aside {
 
 footer {
     grid-area: foot;
-    background-color: #C09F80;
+    background-color: #a5acab;
 }
 
 .footerContainer {

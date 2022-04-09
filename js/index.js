@@ -12,11 +12,13 @@ function handleMenu() {
     $navList.classList.toggle("active");
  }
 
-//Navbar style while scrolling 
-$(window).scroll(function() {
-    if ($(".navbarContainer").position().top > 186) {  //186 is the navbar absolute position from top of the window 
-        $(".navbarLogo").addClass("navbarSticked");
-    } else {
-        $(".navbarLogo").removeClass("navbarSticked");
-    }
+//Navbar style while scrolling
+$(function() { 
+    $(window).scroll(function() {
+        if ($(".navbarContainer").position().top > 186) {  //186 is the navbar absolute position from top of the window 
+            $(".navbarLogo").addClass("navbarSticked");
+        } else {
+            $(".navbarLogo").removeClass("navbarSticked");
+        }
+    });
 });
