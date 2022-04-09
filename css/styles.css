@@ -13,7 +13,7 @@
     display: grid;
     grid-template-areas: "head head head"
                          "nav nav nav"
-                         "sect sect side"
+                         "sect sect sect"
                          "foot foot foot";
     overflow: auto;
 }
@@ -216,11 +216,11 @@ section {
 }
 
 .carrouselContainer {
+    justify-self: center;
 	width: 100%;
     height: auto;
 	overflow: hidden;
-    margin: auto;
-	box-shadow: 0 6px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 1px 6px rgba(0,0,0,0.23);
 }
 
 .carrouselContainer ul {
@@ -241,7 +241,6 @@ section {
 
 .carrouselContainer img {
 	width: 100%;
-    max-width: 900px;
 	height: auto;
 }
 
@@ -340,7 +339,7 @@ section {
 
 aside {
     grid-area: side;
-    background-color: #7d786d;
+    display: none;
 }
 
 
