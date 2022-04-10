@@ -1,3 +1,6 @@
+/* Note: Mobile-first design 
+
+
 /* -----------
     GENERAL
 ------------*/
@@ -21,6 +24,15 @@
     bottom: 0;
 }
 
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+h4 {
+    font: 1.5rem sans-serif;
+}
 
 /* -----------
     HEADER
@@ -255,12 +267,6 @@ section {
     padding: 2.5em 2em;
     }
 
-.booksArticle  h3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2em;
-    padding-bottom: 1.5rem;
-}
-
 .booksContainer {
     padding: 1em;
     width: 80%;
@@ -335,8 +341,12 @@ aside {
 .sideContainer {
     background-color: #f1f1f1;
     height: 100%;
+    padding: 1rem;
   }
 
+.sideContainer h3 {
+
+}
 
 /* -----------
     FOOTER
@@ -369,14 +379,13 @@ footer {
 }
 
 .footerContainer li {
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
 .footerContainer a {
     text-decoration: none;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 .footerContainer a:hover {
@@ -399,7 +408,6 @@ footer {
     grid-area: soc;
     display: flex;
     align-items: center;
-
 }
 
 .footerSocial .fa-stack .fa-stack-1x {
@@ -441,7 +449,7 @@ footer {
 
 .developerInfo img {
     height: 3.5em;
-    margin-left: .8em;
+    padding-left: .8em;
 }
 
 /* -----------
