@@ -150,10 +150,6 @@ header {
     display: none;
 }
 
-.navbarLogo img {
-    height: 3em;
-}
-
 .navbarSticky {
     position: sticky;
     top: 0;
@@ -268,18 +264,11 @@ section {
 .booksContainer {
     padding: 1em;
     width: 80%;
-    overflow: hidden;
 }
 
 .booksList {
     display: flex;
-    list-style-type: none;
-    width: 100%;  
-}
-
-.bookThumbnail img {
-    width: 100%;
-    height: auto;
+    list-style-type: none; 
 }
 
 .bookTwo {
