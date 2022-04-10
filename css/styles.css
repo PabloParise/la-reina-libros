@@ -11,11 +11,14 @@
 
 .bodyGrid {
     display: grid;
-    grid-template-areas: "head head head"
-                         "nav nav nav"
-                         "sect sect sect"
-                         "foot foot foot";
-    overflow: auto;
+    grid-template-areas: "head head"
+                         "nav nav"
+                         "sect side"
+                         "foot foot";
+    grid-template-columns: 3fr 1fr;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
 }
 
 
@@ -40,12 +43,13 @@ header {
 .headerBanner {
     display: flex;
     justify-content: space-between;
-    padding: 1em 2em;
+    height: 11em;
     background-color: #2c494d;
 }
 
 .bannerImage {
-    padding-left: 2.5em;
+    padding-left: 3em;
+    padding-top: .7em;
 }
 
 .bannerImage img{
@@ -115,22 +119,21 @@ header {
     grid-area: nav;
     display: flex;
     justify-content: space-around;
+    height: 3.5em;
     background-color: #bbdfc4;
     font-size: 1.25em;
-    width: 100%;
     z-index: 9999;
 }
 
 .navbarContainer ul {
     display: flex;
-    justify-content: center;
+    align-items: center;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbarLink {
-    display: inline-block;
-    margin: .1em 1.5em;
+    margin: 0 1.5em;
     padding: 1em 2em;
     border-radius: 2%;
     color: black;
@@ -253,8 +256,7 @@ section {
 }
 
 .booksArticle{
-    margin-top: 2em;
-    padding: 0 4em;
+    padding: 2.5em 2em;
     }
 
 .booksArticle  h3{
@@ -339,9 +341,12 @@ section {
 
 aside {
     grid-area: side;
-    display: none;
 }
 
+.sideContainer {
+    background-color: #f1f1f1;
+    height: 100%;
+  }
 
 
 /* -----------
