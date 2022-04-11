@@ -110,13 +110,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 4rem;
+    min-height: 4rem;
     background-color: #bbdfc4;
     font-size: 1.25em;
     z-index: 9999;
 }
 
-.navbarContainer ul {
+.navbarList {
     display: none;
     width: 100%;
     text-align: center;
@@ -134,12 +134,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .smallSearch {
     display: flex;
     align-items: center;
     width: 50%;
+    padding: 0.65rem 0;
 }
 
 .smallSearch input {
@@ -155,8 +157,6 @@ header {
     background-color: #bbdfc4;
     border: 2px solid #bbdfc4;
 }
-
-
 
 .navbarLink:hover{
     background-color: #6ca7b5;
