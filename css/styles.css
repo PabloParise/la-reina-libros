@@ -127,7 +127,19 @@ header {
 .navbarLink {
     display: block;
     padding: .8em .8em;
-    border-top: 1px solid rgba(0,0,0,0.60);
+    border-top: 1px solid rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #2c494d;
+}
+
+.navbarLink:hover{
+    background-color: #6ca7b5;
+    color: white;
+    transition: all 0.1s ease;
+}
+
+.navbarActive {
+    display: block;
 }
 
 .navbarSmall {
@@ -156,16 +168,6 @@ header {
     width: 5rem;
     background-color: #bbdfc4;
     border: 2px solid #bbdfc4;
-}
-
-.navbarLink:hover{
-    background-color: #6ca7b5;
-    color: white;
-    transition: all 0.1s ease;
-}
-
-.navbarActive {
-    display: block;
 }
 
 .navbarLogo {
