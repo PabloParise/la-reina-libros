@@ -39,35 +39,40 @@
             <div class="bannerImage">
                 <a href="index.html"><img src="./images/darkBannerLogo.png" alt="banner logo"></a>
             </div> <!--end of banner image container-->
-            <div class="bannerContainer">
-                <div class="bannerButtons">
-                    <ul>
-                        <li class="accountLogin"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</li>
-                        <li class="myAccount"><i class="fa-solid fa-house"></i> Mi cuenta</li>
-                        <li class="shopCart"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</li>
-                    </ul>
-                </div> <!--end of banner buttons-->
-                <div class="bannerSearch">
-                    <input type="text" placeholder="Ingresa título, autor o palabra clave">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div> <!--end of banner search-->
-            </div> <!--end of container-->
+            <div class="bannerButtons">
+                <ul>
+                    <li class="accountLogin"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</li>
+                    <li class="myAccount"><i class="fa-solid fa-house"></i> Mi cuenta</li>
+                    <li class="shopCart"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</li>
+                </ul>
+            </div> <!--end of banner buttons-->
+            <div class="bannerSearch"> <!--only for large devices-->
+                <input type="text" placeholder="Ingresa título, autor o palabra clave">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> <!--end of banner search-->
         </div> <!--end of banner-->
     </header>
 
     <nav class="navbarContainer" id="navbarContainer">
         <a class="navbarLogo" id="navbarLogo" href="index.html"><img src="./images/navbarLogo.png" alt="LRL Logo"></a>
+        <div class="navbarSmall"> <!--only for small devices-->
+            <div class="smallMenu" id="menuToggle"> 
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+            </div> <!--end of menu lines-->
+            <a class="smallLogo" id="smallLogo" href="index.html"><img src="./images/navbarLogo.png" alt="LRL Logo"></a>
+            <div class="smallSearch">
+                <input type="text" placeholder="Ingresa título, autor o palabra clave">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> <!--end of nav search-->
+        </div> <!--end of nav small-->
         <ul id="navbarList">
             <li><a class="navbarLink" href="#">Inicio</a></li>
             <li><a class="navbarLink" href="books.html">Libros</a></li>
             <li><a class="navbarLink" href="about.html">Nosotros</a></li>
             <li><a class="navbarLink" href="contact.html">Contacto</a></li>
         </ul>
-        <div class="navbarMenu" id="menuToggle">
-            <div class="menuLine"></div>
-            <div class="menuLine"></div>
-            <div class="menuLine"></div>
-        </div>
     </nav>
 
 
@@ -79,32 +84,34 @@
             </ul>
         </div>
         <article class="booksArticle">
-            <h3>Populares</h3>
+            <div class="booksText">
+                <h3>Novedades</h3>
+                <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
+            </div>
             <div class="booksContainer">
                 <ul class="booksList">
                     <li class="bookThumbnail"><img src="./images/portadaAleph.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookTwo"><img src="./images/portadaFicciones.jpg" alt="book thumbnail"></li>
+                    <li class="bookThumbnail bookTwo"><img src="./images/portadaSueno.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookThree"><img src="./images/portadaJuguete.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookFour"><img src="./images/portadaMisteriosa.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookFive"><img src="./images/portadaRayuela.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookSix"><img src="./images/portadaSobre.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookSeven"><img src="./images/portadaSueno.jpg" alt="book thumbnail"></li>
-                    <a class="booksLink" href="books.html" target="_blank"><li class="bookThumbnail"><img src="./images/portadaExtra.jpg" alt="book thumbnail"></li></a>
                 </ul>
             </div> <!--end of books container-->
         </article>
         <article class="booksArticle">
-            <h3>Novedades</h3>
+            <div class="booksText">
+                <h3>Novedades</h3>
+                <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
+            </div>
             <div class="booksContainer">
                 <ul class="booksList">
                     <li class="bookThumbnail"><img src="./images/portadaAleph.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookTwo"><img src="./images/portadaFicciones.jpg" alt="book thumbnail"></li>
+                    <li class="bookThumbnail bookTwo"><img src="./images/portadaSueno.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookThree"><img src="./images/portadaJuguete.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookFour"><img src="./images/portadaMisteriosa.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookFive"><img src="./images/portadaRayuela.jpg" alt="book thumbnail"></li>
                     <li class="bookThumbnail bookSix"><img src="./images/portadaSobre.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookSeven"><img src="./images/portadaSueno.jpg" alt="book thumbnail"></li>
-                    <a class="booksLink" href="books.html" target="_blank"><li class="bookThumbnail"><img src="./images/portadaExtra.jpg" alt="book thumbnail"></li></a>
                 </ul>
             </div> <!--end of books container-->
         </article>

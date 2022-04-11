@@ -28,15 +28,20 @@ window.onscroll = function() {stickyStyle()};
 
 const $navbarContainer = document.getElementById("navbarContainer");
 const $navbarLogo = document.getElementById("navbarLogo");
+const $smallLogo = document.getElementById("smallLogo");
 
 let $navbarSticky = $navbarContainer.offsetTop;
 
 function stickyStyle() {
   if (window.pageYOffset >= $navbarSticky) {
-    $navbarLogo.classList.add("logoSticky")
+    $navbarLogo.classList.add("logoSticky");
+    $smallLogo.classList.add("smallSticky");
     $navbarContainer.classList.add("navbarSticky");
   } else {
     $navbarLogo.classList.remove("logoSticky");
+    $smallLogo.classList.remove("smallSticky");
     $navbarContainer.classList.remove("navbarSticky");
   }
 }
+
+
