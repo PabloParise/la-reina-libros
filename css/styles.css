@@ -27,6 +27,7 @@
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+    margin-bottom: .4rem;
 }
 
 h4 {
@@ -98,6 +99,7 @@ header {
 
 .bannerSearch {
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -419,6 +421,7 @@ footer {
     border: 1px solid #646464;
     border-radius: 5px;
     font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
 }
 
 .developerInfo {
@@ -450,6 +453,144 @@ MEDIA QUERIES
 ------------*/
 
 /*--- Large devices ---*/
+
+@media screen and (min-width: 768px) {
+
+    /*----------HEADER----------*/
+
+    .headerBanner {
+        grid-template-areas: "img butt"
+                            "img sear";
+        grid-template-rows: 1fr 1fr;
+        justify-items: stretch;
+    }
+
+    .bannerImage {
+        padding-left: 3em;
+        padding-top: .7em;
+    }
+
+    .bannerImage img{
+        height: 150px;
+    }
+
+    .bannerButtons ul {
+        flex-direction: row;
+    }
+
+    .bannerButtons li {
+        margin: 0.08em 0.25em;
+        padding: 1.2em 1em;
+        font-size: 1.1em;
+    }
+
+    .bannerButtons li:first-child {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .bannerSearch {
+        grid: sear;
+        display: flex;
+        width: 90%;
+    }
+
+    .bannerSearch input {
+        width: 100%;
+        height: 2.25rem;
+        padding: .5rem;
+        border: 2px solid #bbdfc4;
+        border-radius: 2px;
+    }
+
+    .bannerSearch button {
+        width: 5rem;
+        height: 2.25rem;
+        background-color: #bbdfc4;
+        border: 2px solid #bbdfc4;
+    }
+
+    /*----------NAVBAR----------*/
+
+    .navbarContainer {
+        flex-direction: row;
+    }
+
+    .navbarContainer ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+
+    .navbarLink {
+        margin: 0 0.5em;
+        padding: 1em;
+        border-radius: 2%;
+        color: black;
+        text-decoration: none;
+    }
+
+    .navbarLink:hover{
+        background-color: #6ca7b5;
+        color: white;
+        transition: all 0.1s ease;
+    }
+
+    .navbarLogo {
+        display: none;
+    }
+
+    .navbarSticky {
+        position: sticky;
+        top: 0;
+        box-shadow:  0 1px 10px #2c494d;
+    }
+
+    .logoSticky {
+        display: flex;
+        align-items: center;    
+    }
+
+    .logoSticky img {
+        height: 3em;
+    }
+
+    .navbarSmall {
+        display: none;
+    }
+
+
+    .largeCarr {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 200%;
+        height: auto;
+        animation: imageCarrousel 10s ease-in-out infinite;
+    }
+
+    .smallCarr {
+        display: none;
+    }
+
+    /*----------FOOTER----------*/
+
+    .footerContainer {
+        display: grid;
+        grid-template-areas: "about faq acc"
+                                "soc soc soc"
+                                "copy copy copy";
+        justify-items: center;
+    }
+
+    .footerCopyright {
+        flex-direction: row;
+        padding: 1em 2em;
+        font-size: .8rem;
+    }
+
+} /*---End Media Query 768px----*/
 
 @media screen and (min-width: 992px) {
 
@@ -624,7 +765,7 @@ MEDIA QUERIES
         opacity: 55%;
     }
 
-
+    /*----------FOOTER----------*/
 
     .footerContainer {
         display: grid;
@@ -637,5 +778,6 @@ MEDIA QUERIES
     .footerCopyright {
         flex-direction: row;
         padding: 1em 4em;
+        font-size: 1rem;
     }
-}
+} /*---End Media Query 992px----*/
