@@ -276,14 +276,21 @@ section {
 }
 
 .booksContainer {
-    padding: 1em;
-
+    margin-top: 1rem;
 }
 
 .booksList {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none; 
+}
+
+.booksList img{
+    margin-right: 0.1rem;
+}
+
+.booksList:last-child{
+    margin-right: 0;
 }
 
 /*
@@ -603,5 +610,11 @@ MEDIA QUERIES
     
     .smallCarr {
         display: none;
+    }
+
+
+
+    .bookList img{
+        width: auto;
     }
 }
