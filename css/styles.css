@@ -293,45 +293,6 @@ section {
     margin-right: 0;
 }
 
-/*
-.bookTwo {
-    position: absolute;
-    margin-left: 8%;
-}
-
-.bookThree {
-    position: absolute;
-    margin-left: 16%;
-}
-
-.bookFour {
-    position: absolute;
-    margin-left: 24%;
-}
-
-.bookFive {
-    position: absolute;
-    margin-left: 32%;
-}
-
-.bookSix {
-    position: absolute;
-    margin-left: 40%;
-}
-
-.bookSeven {
-    position: absolute;
-    margin-left: 48%;
-}
-
-.booksLink {
-    display: flex;
-    position: absolute;
-    margin-left: 56%;
-    opacity: 55%;
-}
-*/
-
 .bookThumbnail:hover {
     z-index: 2;
     transform: scale(1.1);
@@ -377,11 +338,12 @@ footer {
 
 .footerContainer {
     display: grid;
-    grid-template-areas: "about faq acc"
-                         "soc soc soc"
-                         "copy copy copy";
+    grid-template-areas: "about"
+                         "faq" 
+                         "acc"
+                         "soc"
+                         "copy";
     row-gap: 2em;
-    justify-items: center;
     padding: 2em;
     color: white;
 }
@@ -449,10 +411,11 @@ footer {
 .footerCopyright {
     grid-area: copy;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1em 4em;
+    padding: 1rem;
     border: 1px solid #646464;
     border-radius: 5px;
     font-family: "Open Sans", sans-serif;
@@ -463,6 +426,12 @@ footer {
     align-items: center;
     font-family: Outfit, "Open Sans", sans-serif;
     font-size: 1.2em;
+}
+
+.developerInfo:hover {
+    color: #2c494d;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .developerInfo img {
@@ -612,9 +581,61 @@ MEDIA QUERIES
         display: none;
     }
 
-
+    /*----------SECTION----------*/
 
     .bookList img{
         width: auto;
+    }
+
+    .bookTwo {
+        position: absolute;
+        margin-left: 8%;
+    }
+    
+    .bookThree {
+        position: absolute;
+        margin-left: 16%;
+    }
+    
+    .bookFour {
+        position: absolute;
+        margin-left: 24%;
+    }
+    
+    .bookFive {
+        position: absolute;
+        margin-left: 32%;
+    }
+    
+    .bookSix {
+        position: absolute;
+        margin-left: 40%;
+    }
+    
+    .bookSeven {
+        position: absolute;
+        margin-left: 48%;
+    }
+    
+    .booksLink {
+        display: flex;
+        position: absolute;
+        margin-left: 56%;
+        opacity: 55%;
+    }
+
+
+
+    .footerContainer {
+        display: grid;
+        grid-template-areas: "about faq acc"
+                             "soc soc soc"
+                             "copy copy copy";
+        justify-items: center;
+    }
+
+    .footerCopyright {
+        flex-direction: row;
+        padding: 1em 4em;
     }
 }
