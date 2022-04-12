@@ -128,16 +128,64 @@ header {
 
 .navbarLink {
     display: block;
-    padding: .8em .8em;
+    padding: .8rem .8rem;
     border-top: 1px solid rgba(0,0,0,0.2);
     text-decoration: none;
-    color: #2c494d;
+    color: black;
 }
 
 .navbarLink:hover{
     background-color: #6ca7b5;
     color: white;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
+}
+
+.dropdown {
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.dropdownButton {
+    display: block;
+    width: 100%;
+    padding: .8rem .8rem;
+    border: none;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.dropdownLinks {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownLinks a {
+    display: block;
+    float: none;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(50, 50, 50);
+    font-size: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.dropdownLinks a:hover {
+    background-color: #2c494d;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.dropdown:hover .dropdownButton {
+    background-color: #6ca7b5;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.dropdown:hover .dropdownLinks {
+    display: block;
 }
 
 .navbarActive {
@@ -527,14 +575,29 @@ MEDIA QUERIES
         margin: 0 0.5em;
         padding: 1em;
         border-radius: 2%;
-        color: black;
         text-decoration: none;
+        border-top: none;
     }
 
     .navbarLink:hover{
         background-color: #6ca7b5;
         color: white;
-        transition: all 0.1s ease;
+        transition: all 0.2s ease;
+    }
+
+    .dropdown {
+        margin: 0 0.5em;
+    }
+
+    .dropdownButton {
+        width: auto;
+        padding: 1em;
+        border-radius: 2%;
+        border-top: none;
+    }
+
+    .dropdownLinks {
+        position: absolute;
     }
 
     .navbarLogo {
@@ -559,7 +622,6 @@ MEDIA QUERIES
     .navbarSmall {
         display: none;
     }
-
 
     .largeCarr {
         display: flex;
@@ -674,17 +736,16 @@ MEDIA QUERIES
     .navbarLink {
         margin: 0 1.5em;
         padding: 1em 2em;
-        border-radius: 2%;
-        color: black;
-        text-decoration: none;
     }
-    
-    .navbarLink:hover{
-        background-color: #6ca7b5;
-        color: white;
-        transition: all 0.1s ease;
+
+    .dropdown {
+        margin: 0 1.5em;
     }
-    
+
+    .dropdownButton {
+        padding: 1em 2em;
+    }
+
     .navbarLogo {
         display: none;
     }
