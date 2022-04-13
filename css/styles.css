@@ -173,7 +173,7 @@ header {
 }
 
 .dropdownLinks a:hover {
-    background-color: #2c494d;
+    background-color: #cccccc;
     color: white;
     transition: all 0.2s ease;
 }
@@ -184,11 +184,7 @@ header {
     transition: all 0.2s ease;
 }
 
-.dropdown:hover .dropdownLinks {
-    display: block;
-}
-
-.navbarActive {
+.active {
     display: block;
 }
 
@@ -598,6 +594,10 @@ MEDIA QUERIES
 
     .dropdownLinks {
         position: absolute;
+    }
+
+    .dropdown:hover .dropdownLinks {
+        display: block;
     }
 
     .navbarLogo {

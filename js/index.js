@@ -2,16 +2,29 @@
  Custom JS File
  ------------*/
 
-// Menu displaying on small devices
-const $toggleButton = document.getElementById("menuToggle")
+// Menu toggle for small devices
+const $menuToggle = document.getElementById("menuToggle")
 const $navbarList = document.getElementById("navbarList")
 
-$toggleButton.addEventListener("click", handleMenu)
+$menuToggle.addEventListener("click", handleMenu)
 
 function handleMenu() { 
-    $navbarList.classList.toggle("navbarActive");
+    $navbarList.classList.toggle("active");
  }
 
+// Dropdown toggle for small devices
+const $dropdownToggle = document.getElementById("dropdown");
+const $dropdownLinks = document.getElementById("dropdownLinks");
+const $navbarSmall = document.getElementById("navbarSmall")
+const $navbarCss = window.getComputedStyle($navbarSmall, null);
+
+$dropdownToggle.addEventListener("click", handleDropdown);
+
+function handleDropdown() {
+  if ($navbarCss.getPropertyValue("display") == "flex") {
+    $dropdownLinks.classList.toggle("active");
+  }
+}
  
 //Navbar style while scrolling
 window.onscroll = function() {stickyStyle()};
