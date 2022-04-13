@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
     <meta name="description" content="Tienda Virtual de libros">
     <meta name="author" content="Pablo Parise">
 
-    <title>La Reina Libros - Nosotros</title>
+    <title>La Reina Libros - Inicio</title>
 
     <!--Styles-->
     <link rel="stylesheet" href="css/normalize.css">
@@ -17,30 +18,142 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
 
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/e77625ad44.js" crossorigin="anonymous"></script>
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bodyGrid">
+    <header>
+        <div class="headerTop">
+            <a href="https://www.instagram.com/lareina.libros" target="_blank"></a><span><i class="fa-brands fa-instagram-square fa-xl"></i></span>
+            <a href="https://www.facebook.com/lareinalibros" target="_blank"><span><i class="fa-brands fa-facebook-square fa-xl"></i></span></a>
+        </div>
+        <div class="headerBanner">
+            <div class="bannerImage">
+                <a href="index.html"><img src="./images/darkBannerLogo.png" alt="banner logo"></a>
+            </div> <!--end of banner image container-->
+            <div class="bannerButtons">
+                <ul>
+                    <li class="accountLogin"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</li>
+                    <li class="myAccount"><i class="fa-solid fa-house"></i> Mi cuenta</li>
+                    <li class="shopCart"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</li>
+                </ul>
+            </div> <!--end of banner buttons-->
+            <div class="bannerSearch"> <!--only for large devices-->
+                <input type="text" placeholder="Ingresa título, autor o palabra clave">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> <!--end of banner search-->
+        </div> <!--end of banner-->
+    </header>
 
-    <nav class="navbar">
-        <a href="index.html"><img class="navbarLogo" src="./images/books-logo.png" alt="LRL Logo"></a>
+    <nav class="navbarContainer" id="navbarContainer">
+        <a class="navbarLogo" id="navbarLogo" href="index.html"><img src="./images/navbarLogo.png" alt="LRL Logo"></a>
+        <div class="navbarSmall" id="navbarSmall"> <!--only for small devices-->
+            <div class="smallMenu" id="menuToggle"> 
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+            </div> <!--end of menu lines-->
+            <a class="smallLogo" id="smallLogo" href="index.html"><img src="./images/navbarLogo.png" alt="LRL Logo"></a>
+            <div class="smallSearch">
+                <input type="text" placeholder="Ingresa título, autor o palabra clave">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> <!--end of nav search-->
+        </div> <!--end of nav small-->
         <ul class="navbarList" id="navbarList">
-            <li><a class="navbarLink" href="index.html">Inicio</a></li>
-            <li><a class="navbarLink" href="books.html">Libros</a></li>
-            <li><a class="navbarLink" href="#">Nosotros</a></li>
+            <li><a class="navbarLink" href="#">Inicio</a></li>
+            <li>
+                <div class="dropdown" id="dropdown">
+                    <button class="dropdownButton">
+                        Libros
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdownLinks" id="dropdownLinks">
+                        <a href="#">Novedades</a>
+                        <a href="#">Populares</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="navbarLink" href="about.html">Nosotros</a></li>
             <li><a class="navbarLink" href="contact.html">Contacto</a></li>
         </ul>
-        <div class="navbarMenu" id="menuToggle">
-            <div class="menuLine"></div>
-            <div class="menuLine"></div>
-            <div class="menuLine"></div>
-        </div>
     </nav>
+
+    <section>
+        <div class="aboutContainer">
+            <div class="aboutText">
+                <h1>¿Quiénes somos?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore impedit magni hic eos esse consequatur beatae quos assumenda quam laudantium ratione cum, porro tenetur aliquam itaque minus eaque ex nostrum.
+                Cumque inventore neque beatae molestias fugiat doloribus, blanditiis quod? Eos, quas. Provident magni voluptates qui deserunt voluptatum, aut praesentium quaerat sunt consequuntur fuga iusto beatae deleniti eveniet cum ad alias!</p>
+            </div> <!--end of about text-->
+            <div class="carrouselContainer">
+                <ul class="aboutCarr">
+                    <li><img src="./images/aboutCarr1.jpg" alt=""></li>
+                    <li><img src="./images/aboutCarr2.jpg" alt=""></li>
+                </ul>
+            </div> <!--end of carrousel container-->
+        </div> <!--end of about container-->
+
+    </section>
+
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerAbout">
+                <h6>Sobre nosotros</h6>
+                <ul>
+                    <li><a href="about.html">Quiénes somos</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
+                    <li><a href="contact.html">Política de privacidad</a></li>
+                </ul>
+            </div> <!--end About Us container-->
+            <div class="footerFaq">
+                <h6>Preguntas frecuentes</h6>
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div> <!--end FAQ container-->
+            <div class="footerAccount">
+                <h6>Mi cuenta</h6>
+                <ul>
+                    <li><a href="">Mis datos</a></li>
+                    <li><a href="">Mi espacio</a></li>
+                </ul>
+            </div> <!--end of My Account container-->
+            <div class="footerSocial">
+                <h6>¡Seguinos!</h6>
+                <span class="fa-stack fa-2x">
+                    <a href="https://www.instagram.com/lareina.libros" target="_blank">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack fa-2x">
+                    <a href="https://www.facebook.com/lareinalibros" target="_blank">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-facebook fa-stack-1x"></i>
+                    </a>
+                </span>
+            </div> <!-- end of footer social -->
+            <div class="footerCopyright">
+                    <p>Copyright © 2022 La Reina Libros. Todos los Derechos Reservados</p>
+                <div class="developerInfo">
+                    <p>Desarrollado por</p>
+                    <a href="https://www.linkedin.com/in/pabloparise/" target="_blank"><img src="./images/pplogo.png" alt=""></a>
+                </div>
+            </div> <!-- end of copyright --> 
+        </div> <!-- end of footer container -->
+    </footer> <!-- end of footer -->  
+
     
+    <!-- Scripts-->
+    <script src="./js/index.js"></script> <!--Custom JS-->
+
 </body>
 </html>

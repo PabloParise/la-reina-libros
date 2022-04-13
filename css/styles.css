@@ -24,6 +24,10 @@
     bottom: 0;
 }
 
+h1 {
+    font-family: 'Sanchez', serif;
+}
+
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
@@ -352,6 +356,23 @@ section {
 
 .booksLink:hover {
     opacity: 95%;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutText {
+    padding-left: ;
+}
+
+.aboutCarr {
+	display: flex;
+    justify-content: center;
+	width: 200%;
+    height: auto;
+	animation: imageCarrousel 10s ease-in-out infinite;
 }
 
 
@@ -824,6 +845,10 @@ MEDIA QUERIES
         position: absolute;
         margin-left: 56%;
         opacity: 55%;
+    }
+
+    .aboutContainer {
+        flex-direction: row;
     }
 
     /*----------FOOTER----------*/
