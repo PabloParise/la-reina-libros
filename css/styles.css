@@ -268,7 +268,7 @@ section {
 	width: 100%;
     height: auto;
 	overflow: hidden;
-	box-shadow: 0 1px 6px rgba(0,0,0,0.23);
+
 }
 
 .smallCarr {
@@ -288,7 +288,7 @@ section {
     width: 100%;
     height: auto;
 	list-style: none;
-	margin: 1em 1em 0.1em;
+
 }
 
 .carrouselContainer img {
