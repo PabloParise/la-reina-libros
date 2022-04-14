@@ -26,6 +26,7 @@
 
 h1 {
     font-family: 'Sanchez', serif;
+    font-size: 3rem;
 }
 
 h3 {
@@ -364,15 +365,11 @@ section {
 }
 
 .aboutText {
-    padding-left: ;
+    padding: 0 2rem 1rem;
 }
 
-.aboutCarr {
-	display: flex;
-    justify-content: center;
-	width: 200%;
-    height: auto;
-	animation: imageCarrousel 10s ease-in-out infinite;
+.aboutText p {
+    font: 1.5em Arial, Helvetica, sans-serif;
 }
 
 
@@ -390,8 +387,8 @@ aside {
     padding: 1rem;
   }
 
-.sideContainer h3 {
-
+.aboutAside img{
+    
 }
 
 /* -----------
@@ -850,6 +847,39 @@ MEDIA QUERIES
     .aboutContainer {
         flex-direction: row;
     }
+
+    /*----------ASIDE----------*/
+
+    .aboutAside ul{
+        display: flex;
+        list-style-type: none;
+        padding: 1rem;
+    }
+
+    .aboutAside li {
+        padding: 1rem 1rem 4rem;
+        background-color: white;
+        border: 1px solid rgb(70, 70, 70);
+        border-radius: 2px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    }
+
+    .aboutAside img{
+        width: 400px;
+        height: auto;
+    }
+
+    .aboutAside li:not(:first-child) {
+        margin-left: -20rem;
+        transform: rotate(2deg);
+    }
+
+    .aboutAside li:hover {
+        transform: translate(-10rem,0);
+        transition: all 0.5s ease;
+    }
+
 
     /*----------FOOTER----------*/
 
