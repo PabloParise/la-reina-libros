@@ -388,14 +388,25 @@ aside {
     padding: 1rem;
 }
 
+.aboutAside ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 2rem;
+}
+
 .aboutAside li {
     padding: 1rem 1rem 4rem;
     background-color: white;
     border: 1px solid rgb(70, 70, 70);
     border-radius: 2px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
-    transition: all 1s ease;
 }
+
+.aboutAside li:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
 .aboutAside img{
     width: 400px;
     height: auto;
@@ -860,8 +871,6 @@ MEDIA QUERIES
     /*----------ASIDE----------*/
 
     .aboutAside ul{
-        display: flex;
-        list-style-type: none;
         padding: 2rem 3rem 2rem 1rem;
     }
 
