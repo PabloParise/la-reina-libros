@@ -410,14 +410,14 @@ aside {
 }
 
 .aboutAside img{
-    width: 350px;
+    width: 300px;
     height: auto;
 }
 
 .svgPin {
     position: absolute;
     margin-top: -55px;
-    margin-left: 130px;
+    margin-left: 90px;
     height: 100px;
     width: auto;
 }
@@ -684,6 +684,17 @@ MEDIA QUERIES
 
     .smallCarr {
         display: none;
+    }
+
+    /*----------ASIDE----------*/
+
+    .aboutAside img{
+        width: 400px;
+        height: auto;
+    }
+
+    .svgPin {
+        margin-left: 130px;
     }
 
     /*----------FOOTER----------*/
