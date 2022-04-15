@@ -390,6 +390,7 @@ aside {
 
 .aboutAside ul{
     display: flex;
+    flex-direction: column;
     align-items: center;
     list-style-type: none;
     padding: 2rem;
@@ -397,20 +398,31 @@ aside {
 
 .aboutAside li {
     padding: 1rem 1rem 4rem;
+    margin: 0 1rem;
     background-color: white;
-    border: 1px solid rgb(70, 70, 70);
     border-radius: 2px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+    transition: all 1s ease;
 }
 
 .aboutAside li:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .aboutAside img{
     width: 400px;
     height: auto;
 }
+
+.svgPin {
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 130px;
+    height: 100px;
+    width: auto;
+}
+
+
 /* -----------
     FOOTER
 ------------*/
@@ -872,9 +884,11 @@ MEDIA QUERIES
 
     .aboutAside ul{
         padding: 2rem 3rem 2rem 1rem;
+        flex-direction: row;
     }
 
     .aboutAside li {
+        margin: 0;
         transition: all 1s ease;
     }
 
@@ -902,6 +916,9 @@ MEDIA QUERIES
         transform: translate(-5rem,0);
     }
 
+    .svgPin {
+        display: none;
+    }
 
     /*----------FOOTER----------*/
 
