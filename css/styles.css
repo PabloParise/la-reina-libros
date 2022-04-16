@@ -39,12 +39,6 @@ h4 {
     font: 1.5rem sans-serif;
 }
 
-p {
-    font: 1.5em Arial, Helvetica, sans-serif;
-    text-align: justify;
-}
-
-
 
 /* -----------
     HEADER
@@ -375,6 +369,11 @@ section {
     padding: 0 3rem 1rem;
 }
 
+.aboutText p {
+    font: 1.5em Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
 
 /* -----------
     ASIDE
@@ -546,6 +545,11 @@ footer {
     align-items: center;
     width: 100vw;
     padding: 0 2rem 2rem;
+}
+
+.formText p {
+    font: 1.5em Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .form {
