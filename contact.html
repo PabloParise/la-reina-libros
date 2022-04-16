@@ -18,9 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
 
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/e77625ad44.js" crossorigin="anonymous"></script>
@@ -68,7 +67,7 @@
             </div> <!--end of nav search-->
         </div> <!--end of nav small-->
         <ul class="navbarList" id="navbarList">
-            <li><a class="navbarLink" href="#">Inicio</a></li>
+            <li><a class="navbarLink" href="index.html">Inicio</a></li>
             <li>
                 <div class="dropdown" id="dropdown">
                     <button class="dropdownButton">
@@ -82,15 +81,44 @@
                 </div>
             </li>
             <li><a class="navbarLink" href="about.html">Nosotros</a></li>
-            <li><a class="navbarLink" href="contact.html">Contacto</a></li>
+            <li><a class="navbarLink" href="#">Contacto</a></li>
         </ul>
     </nav>
 
     <section>
+        <div class="formContainer">
+            <div class="formText">
+                <h1>Contacto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam veniam consectetur nam eaque labore voluptate cumque voluptatibus provident officiis accusantium praesentium aliquid ullam unde explicabo excepturi harum commodi! Incidunt.
+                Nihil eum voluptas explicabo. Veniam, qui natus corporis totam laborum perspiciatis, aliquid explicabo laudantium blanditiis officiis magnam, aut ea consectetur earum hic aliquam. Doloribus sint quisquam assumenda delectus voluptas aut.</p>
+            </div>
+            <form class="form" action="">
+                <div class="formElem">
+                    <label for="subject">Asunto</label>
+                    <select name="subject" id="" required>
+                        <option value="info">Información libros</option>
+                        <option value="shop">Mi compra online</option>
+                        <option value="web">Problema con la web</option>
+                        <option value="suggestion">Sugerencia</option>
+                        <option value="other">Otros</option>
+                    </select>
+                </div>
+                <div class="formElem">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="formElem">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="" placeholder="Ingrese su Email" required>
+                </div>
+                <div class="formElem">
+                    <label for="textarea">Consulta</label>
+                    <textarea name="textarea" id="" placeholder="Ingrese su Consulta" required></textarea>
+                </div>
+                <input id="submit" type="submit" value="Enviar">
+            </form>
+        </div>
     </section>
-
-    <aside>
-    </aside>
 
     <footer>
         <div class="footerContainer">

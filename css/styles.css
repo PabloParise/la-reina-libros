@@ -39,6 +39,13 @@ h4 {
     font: 1.5rem sans-serif;
 }
 
+p {
+    font: 1.5em Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
+
 /* -----------
     HEADER
 ------------*/
@@ -368,11 +375,6 @@ section {
     padding: 0 3rem 1rem;
 }
 
-.aboutText p {
-    font: 1.5em Arial, Helvetica, sans-serif;
-    text-align: justify;
-}
-
 
 /* -----------
     ASIDE
@@ -418,6 +420,7 @@ aside {
     height: 100px;
     width: auto;
 }
+
 
 
 /* -----------
@@ -537,6 +540,86 @@ footer {
     FORM
 ------------*/
 
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0 2rem 2rem;
+}
+
+.form {
+    width: 90%;
+    margin-top: 2rem;
+}
+
+
+.formElem {
+    padding-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #565656;
+}
+
+.form input {
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+}
+
+.form input:focus {
+    border: 1px solid #565656;
+    outline: none;
+}
+
+#submit {
+    padding: 0;
+    background-color: #c4c3c3;
+    border: 1px solid #565656;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.form select {
+    width: 100%;
+    height: 3em;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+}
+
+.form select:focus {
+    border: 1px solid #565656;
+    outline: none;
+}
+
+.form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    height: 10rem;
+    resize: none;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    transition: all 0.4s ease;
+}
+
+.form textarea:focus {
+    border: 1px solid #565656;
+    outline: none;
+}
 
 
 /* -----------
@@ -789,6 +872,7 @@ MEDIA QUERIES
         flex-direction: row;
         align-items: center;
         width: auto;
+        margin: 0;
     }
     
     .navbarLink {
@@ -828,6 +912,8 @@ MEDIA QUERIES
     }
 
 
+    /*----------SECTION----------*/
+
     .largeCarr {
         display: flex;
         justify-content: center;
@@ -840,8 +926,6 @@ MEDIA QUERIES
     .smallCarr {
         display: none;
     }
-
-    /*----------SECTION----------*/
 
     .bookList img{
         width: auto;
@@ -944,4 +1028,15 @@ MEDIA QUERIES
         padding: 1em 4em;
         font-size: 1rem;
     }
+
+    /*----------FORM----------*/
+
+    .formContainer {
+        padding: 0 5rem 2rem;
+    }
+
+    .form {
+        width: 60%;
+    }
+
 } /*---End Media Query 992px----*/
