@@ -50,6 +50,23 @@ function stickyStyle() {
   }
 }
 
+//Answer display for FAQ
+
+let $accordionArr = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < $accordionArr.length; i++) {
+  $accordionArr[i].addEventListener("click", function() {
+    this.classList.toggle("activeAccordion");
+    let $answer = this.nextElementSibling;
+    if ($answer.style.display === "block") {
+      $answer.style.display = "none";
+    } else {
+      $answer.style.display = "block";
+    }
+  });
+};
+
+
 //Slider infinite effect
 
 const $btnRight = document.getElementById("btnRight");
@@ -119,19 +136,5 @@ function largeLeft() {
   }, 500);
 };
 
-//Answer display for FAQ
 
-let $accordionArr = document.getElementsByClassName("accordion");
-
-for (let i = 0; i < $accordionArr.length; i++) {
-  $accordionArr[i].addEventListener("click", function() {
-    this.classList.toggle("activeAccordion");
-    let $answer = this.nextElementSibling;
-    if ($answer.style.display === "block") {
-      $answer.style.display = "none";
-    } else {
-      $answer.style.display = "block";
-    }
-  });
-}
 
