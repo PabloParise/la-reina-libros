@@ -3,6 +3,7 @@
  ------------*/
 
 // Menu toggle for small devices
+
 const $menuToggle = document.getElementById("menuToggle")
 const $navbarList = document.getElementById("navbarList")
 
@@ -13,6 +14,7 @@ function handleMenu() {
  }
 
 // Dropdown toggle for small devices
+
 const $dropdownToggle = document.getElementById("dropdown");
 const $dropdownLinks = document.getElementById("dropdownLinks");
 const $navbarSmall = document.getElementById("navbarSmall")
@@ -27,6 +29,7 @@ function handleDropdown() {
 }
  
 //Navbar style while scrolling
+
 window.onscroll = function() {stickyStyle()};
 
 const $navbarContainer = document.getElementById("navbarContainer");
@@ -47,4 +50,20 @@ function stickyStyle() {
   }
 }
 
+
+//Answer display for FAQ
+
+let $accordionArr = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < $accordionArr.length; i++) {
+  $accordionArr[i].addEventListener("click", function() {
+    this.classList.toggle("activeAccordion");
+    let $answer = this.nextElementSibling;
+    if ($answer.style.display === "block") {
+      $answer.style.display = "none";
+    } else {
+      $answer.style.display = "block";
+    }
+  });
+}
 
