@@ -278,10 +278,10 @@ section {
 
 .smallSlider {
 	display: flex;
+    margin-left: -100%;
 	padding: 0;
-	width: 200%;
+	width: 300%;
     height: auto;
-	animation: imageSlider 10s ease-in-out infinite;
 }
 
 .largeSlider {
@@ -321,14 +321,6 @@ section {
 
 .sliderBtnLeft {
     left: .3rem;
-}
-
-@keyframes imageSlider {
-	0% {margin-left: 0;}
-	45% {margin-left: 0;}
-
-	50% {margin-left: -100%}
-	95% {margin-left: -100%}
 }
 
 .booksArticle{
@@ -986,9 +978,9 @@ MEDIA QUERIES
     .largeSlider {
         display: flex;
         padding: 0;
-        width: 200%;
+        margin-left: -100%;
+        width: 300%;
         height: auto;
-        animation: imageSlider 10s ease-in-out infinite;
     }
     
     .smallSlider{

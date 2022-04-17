@@ -50,6 +50,74 @@ function stickyStyle() {
   }
 }
 
+//Slider infinite effect
+
+const $btnRight = document.getElementById("btnRight");
+const $btnLeft = document.getElementById("btnLeft");
+
+//Small slider
+const $smallSlider = document.getElementById("smallSlider");
+let $smallImage = document.querySelectorAll(".small");
+let $smallImageLast = $smallImage[$smallImage.length-1];
+
+$smallSlider.insertAdjacentElement("afterbegin", $smallImageLast); //Place the last slider image in the beggining of the slider (to get the infinite slider effect)
+
+$btnRight.addEventListener("click", smallRight);
+function smallRight() {
+  let $smallImageFirst = document.querySelectorAll(".small")[0];
+  $smallSlider.style.marginLeft = "-200%";
+  $smallSlider.style.transition = "all 0.5s ease-out";
+  setTimeout(function() {
+    $smallSlider.style.transition = "none";
+    $smallSlider.insertAdjacentElement("beforeend", $smallImageFirst); 
+    $smallSlider.style.marginLeft = "-100%";
+  }, 500);
+};
+
+$btnLeft.addEventListener("click", smallLeft);
+function smallLeft() {
+  let $smallImage = document.querySelectorAll(".small");
+  let $smallImageLast = $smallImage[$smallImage.length-1];
+  $smallSlider.style.marginLeft = "0%";
+  $smallSlider.style.transition = "all 0.5s";
+  setTimeout(function() {
+    $smallSlider.style.transition = "none";
+    $smallSlider.insertAdjacentElement("afterbegin", $smallImageLast); 
+    $smallSlider.style.marginLeft = "-100%";
+  }, 500);
+};
+
+//Large slider
+const $largeSlider = document.getElementById("largeSlider");
+let $largeImage = document.querySelectorAll(".large");
+let $largeImageLast = $largeImage[$largeImage.length-1];
+
+$largeSlider.insertAdjacentElement("afterbegin", $largeImageLast); //Place the last slider image in the beggining of the slider (to get the infinite slider effect)
+
+$btnRight.addEventListener("click", largeRight);
+function largeRight() {
+  let $largeImageFirst = document.querySelectorAll(".large")[0];
+  $largeSlider.style.marginLeft = "-200%";
+  $largeSlider.style.transition = "all 0.5s ease-out";
+  setTimeout(function() {
+    $largeSlider.style.transition = "none";
+    $largeSlider.insertAdjacentElement("beforeend", $largeImageFirst); 
+    $largeSlider.style.marginLeft = "-100%";
+  }, 500);
+};
+
+$btnLeft.addEventListener("click", largeLeft);
+function largeLeft() {
+  let $largeImage = document.querySelectorAll(".large");
+  let $largeImageLast = $largeImage[$largeImage.length-1];
+  $largeSlider.style.marginLeft = "0%";
+  $largeSlider.style.transition = "all 0.5s";
+  setTimeout(function() {
+    $largeSlider.style.transition = "none";
+    $largeSlider.insertAdjacentElement("afterbegin", $largeImageLast); 
+    $largeSlider.style.marginLeft = "-100%";
+  }, 500);
+};
 
 //Answer display for FAQ
 
