@@ -269,40 +269,61 @@ section {
     grid-area: sect;
 }
 
-.carrouselContainer {
-    justify-self: center;
+.sliderContainer {
 	width: 100%;
     height: auto;
 	overflow: hidden;
-
+    position: relative;
 }
 
-.smallCarr {
+.smallSlider {
 	display: flex;
-    justify-content: center;
 	padding: 0;
 	width: 200%;
     height: auto;
-	animation: imageCarrousel 10s ease-in-out infinite;
+	animation: imageSlider 10s ease-in-out infinite;
 }
 
-.largeCarr {
+.largeSlider {
     display: none;
 }
 
-.carrouselContainer li {
+.sliderImage {
+    display: block;
     width: 100%;
     height: auto;
-	list-style: none;
-
+    object-fit: cover;
 }
 
-.carrouselContainer img {
+.sliderImage img {
 	width: 100%;
 	height: auto;
+    vertical-align: middle;
 }
 
-@keyframes imageCarrousel {
+.sliderBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.sliderBtn:hover {
+    color: white;
+}
+
+.sliderBtnRight {
+    right: .3rem;
+}
+
+.sliderBtnLeft {
+    left: .3rem;
+}
+
+@keyframes imageSlider {
 	0% {margin-left: 0;}
 	45% {margin-left: 0;}
 
@@ -356,8 +377,13 @@ section {
     transition: .2s;
 }
 
+.booksLink {
+    color: #565656;
+    transition: 0.2s ease;
+}
+
 .booksLink:hover {
-    opacity: 95%;
+    color: #bbdfc4
 }
 
 .aboutContainer {
@@ -803,19 +829,6 @@ MEDIA QUERIES
         display: none;
     }
 
-    .largeCarr {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 200%;
-        height: auto;
-        animation: imageCarrousel 10s ease-in-out infinite;
-    }
-
-    .smallCarr {
-        display: none;
-    }
-
     /*----------ASIDE----------*/
 
     .aboutAside img{
@@ -970,58 +983,20 @@ MEDIA QUERIES
 
     /*----------SECTION----------*/
 
-    .largeCarr {
+    .largeSlider {
         display: flex;
-        justify-content: center;
         padding: 0;
         width: 200%;
         height: auto;
-        animation: imageCarrousel 10s ease-in-out infinite;
+        animation: imageSlider 10s ease-in-out infinite;
     }
     
-    .smallCarr {
+    .smallSlider{
         display: none;
     }
 
     .bookList img{
         width: auto;
-    }
-
-    .bookTwo {
-        position: absolute;
-        margin-left: 8%;
-    }
-    
-    .bookThree {
-        position: absolute;
-        margin-left: 16%;
-    }
-    
-    .bookFour {
-        position: absolute;
-        margin-left: 24%;
-    }
-    
-    .bookFive {
-        position: absolute;
-        margin-left: 32%;
-    }
-    
-    .bookSix {
-        position: absolute;
-        margin-left: 40%;
-    }
-    
-    .bookSeven {
-        position: absolute;
-        margin-left: 48%;
-    }
-    
-    .booksLink {
-        display: flex;
-        position: absolute;
-        margin-left: 56%;
-        opacity: 55%;
     }
 
     .aboutContainer {

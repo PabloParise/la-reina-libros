@@ -86,21 +86,31 @@
     </nav>
 
     <section>
-        <div class="carrouselContainer">
-            <ul class="largeCarr">
-                <li><img src="./images/largeCarr1.png" alt="carrousel image"></li>
-                <li><img src="./images/largeCarr2.png" alt="carrousel image"></li>
-            </ul>
-            <ul class="smallCarr">
-                <li><img src="./images/smallCarr1.png" alt="carrousel image"></li>
-                <li><img src="./images/smallCarr2.png" alt="carrousel image"></li>
-            </ul>
-        </div>
+        <div class="sliderContainer">
+            <div class="largeSlider" id="largeSlider">
+                <div class="sliderImage">
+                    <img src="./images/largeSlider1.png" alt="slider image">
+                </div> <!--end of slider image-->
+                <div class="sliderImage">
+                    <img src="./images/largeSlider2.png" alt="slider image">
+                </div> <!--end of slider image-->
+            </div> <!--end of large slider-->
+            <div class="smallSlider" id="smallSlider">
+                <div class="sliderImage">
+                    <img src="./images/smallSlider1.png" alt="slider image">
+                </div> <!--end of slider image-->
+                <div class="sliderImage">
+                    <img src="./images/smallSlider2.png" alt="slider image">
+                </div> <!--end of slider image-->
+            </div> <!--end of small slider-->
+            <div class="sliderBtn sliderBtnRight" id="btnRight"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="sliderBtn sliderBtnLeft" id="btnLeft"><i class="fa-solid fa-angle-left"></i></div>
+        </div> <!--end of slider container-->
         <article class="booksArticle">
             <div class="booksText">
                 <h3>Novedades</h3>
                 <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
-            </div>
+            </div> <!--end of books text-->
             <div class="booksContainer">
                 <ul class="booksList">
                     <li class="bookThumbnail"><img src="./images/portadaAleph.jpg" alt="book thumbnail"></li>
@@ -116,7 +126,7 @@
             <div class="booksText">
                 <h3>Populares</h3>
                 <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
-            </div>
+            </div> <!--end of books text-->
             <div class="booksContainer">
                 <ul class="booksList">
                     <li class="bookThumbnail"><img src="./images/portadaAleph.jpg" alt="book thumbnail"></li>
@@ -130,8 +140,6 @@
         </article>
     </section>
 
-    <!--futura seccion dedicada al espacio personal de la cuenta logeada. 
-        Ahora va a estar con display none-->
     <aside>
         <div class="sideContainer">
             <h3>Mi espacio</h3>
@@ -192,7 +200,7 @@
 
     
     <!-- Scripts-->
-    <script src="./js/index.js"></script> <!--Custom JS-->
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
