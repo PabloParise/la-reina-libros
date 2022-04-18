@@ -135,6 +135,3 @@ function largeLeft() {
     $largeSlider.style.marginLeft = "-100%";
   }, 500);
 };
-
-
-
