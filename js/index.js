@@ -70,6 +70,7 @@ for (let i = 0; i < $accordionArr.length; i++) {
 
 const $btnRight = document.getElementById("btnRight");
 const $btnLeft = document.getElementById("btnLeft");
+const $delay = 4000; //ms
 
 //Small device slider
 const $smallSlider = document.getElementById("smallSlider");
@@ -78,7 +79,6 @@ let $smallImageLast = $smallImage[$smallImage.length-1];
 
 $smallSlider.insertAdjacentElement("afterbegin", $smallImageLast); //Place the last slider image in the beggining of the slider (to get the infinite slider effect)
 
-$btnRight.addEventListener("click", smallRight);
 function smallRight() {
   let $smallImageFirst = document.querySelectorAll(".small")[0];
   $smallSlider.style.marginLeft = "-200%";
@@ -90,7 +90,6 @@ function smallRight() {
   }, 500);
 };
 
-$btnLeft.addEventListener("click", smallLeft);
 function smallLeft() {
   let $smallImage = document.querySelectorAll(".small");
   let $smallImageLast = $smallImage[$smallImage.length-1];
@@ -103,14 +102,30 @@ function smallLeft() {
   }, 500);
 };
 
+let $autoSmall = setInterval(smallRight, $delay);
+const $restartSmall = function() {
+  clearInterval($autoSmall);
+  $autoSmall = setInterval(smallRight, $delay);
+};
+
+$btnRight.addEventListener("click", function() {
+  smallRight();
+  $restartSmall();
+});
+
+$btnLeft.addEventListener("click", function() {
+  smallLeft();
+  $restartSmall();
+});
+
 //Large device slider
+
 const $largeSlider = document.getElementById("largeSlider");
 let $largeImage = document.querySelectorAll(".large");
 let $largeImageLast = $largeImage[$largeImage.length-1];
 
 $largeSlider.insertAdjacentElement("afterbegin", $largeImageLast); //Place the last slider image in the beggining of the slider (to get the infinite slider effect)
 
-$btnRight.addEventListener("click", largeRight);
 function largeRight() {
   let $largeImageFirst = document.querySelectorAll(".large")[0];
   $largeSlider.style.marginLeft = "-200%";
@@ -122,7 +137,6 @@ function largeRight() {
   }, 500);
 };
 
-$btnLeft.addEventListener("click", largeLeft);
 function largeLeft() {
   let $largeImage = document.querySelectorAll(".large");
   let $largeImageLast = $largeImage[$largeImage.length-1];
@@ -134,3 +148,19 @@ function largeLeft() {
     $largeSlider.style.marginLeft = "-100%";
   }, 500);
 };
+
+let $autoLarge = setInterval(largeRight, $delay);
+const $restartLarge = function() {
+  clearInterval($autoLarge);
+  $autoLarge = setInterval(largeRight, $delay);
+};
+
+$btnRight.addEventListener("click", function() {
+  largeRight();
+  $restartLarge();
+});
+
+$btnLeft.addEventListener("click", function() {
+  largeLeft();
+  $restartLarge();
+});
