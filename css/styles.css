@@ -368,6 +368,14 @@ section {
     text-align: justify;
 }
 
+.sectionImage {
+    margin: 1rem 1.2rem;
+}
+
+.sectionImage img{
+    width: 100%;
+}
+
 
 /* -----------
     ASIDE
