@@ -2,18 +2,18 @@
  Custom JS File
  ------------*/
 
-// Menu toggle for small devices
+//------Menu toggle for small devices------
 
-const $menuToggle = document.getElementById("menuToggle")
-const $navbarList = document.getElementById("navbarList")
+const $menuToggle = document.getElementById("menuToggle");
+const $navbarList = document.getElementById("navbarList");
 
-$menuToggle.addEventListener("click", handleMenu)
+$menuToggle.addEventListener("click", handleMenu);
 
 function handleMenu() { 
     $navbarList.classList.toggle("active");
- }
+ };
 
-// Dropdown toggle for small devices
+//------Dropdown toggle for small devices------
 
 const $dropdownToggle = document.getElementById("dropdown");
 const $dropdownLinks = document.getElementById("dropdownLinks");
@@ -26,9 +26,9 @@ function handleDropdown() {
   if ($navbarCss.getPropertyValue("display") == "flex") {
     $dropdownLinks.classList.toggle("active");
   }
-}
+};
  
-//Navbar style while scrolling
+//------Navbar style while scrolling------
 
 window.onscroll = function() {stickyStyle()};
 
@@ -48,9 +48,9 @@ function stickyStyle() {
     $smallLogo.classList.remove("smallSticky");
     $navbarContainer.classList.remove("navbarSticky");
   }
-}
+};
 
-//Answer display for FAQ
+//------Answer display for FAQ------
 
 let $accordionArr = document.getElementsByClassName("accordion");
 
@@ -66,13 +66,12 @@ for (let i = 0; i < $accordionArr.length; i++) {
   });
 };
 
-
-//Slider infinite effect
+//------Slider infinite effect------
 
 const $btnRight = document.getElementById("btnRight");
 const $btnLeft = document.getElementById("btnLeft");
 
-//Small slider
+//Small device slider
 const $smallSlider = document.getElementById("smallSlider");
 let $smallImage = document.querySelectorAll(".small");
 let $smallImageLast = $smallImage[$smallImage.length-1];
@@ -104,7 +103,7 @@ function smallLeft() {
   }, 500);
 };
 
-//Large slider
+//Large device slider
 const $largeSlider = document.getElementById("largeSlider");
 let $largeImage = document.querySelectorAll(".large");
 let $largeImageLast = $largeImage[$largeImage.length-1];

@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+ 
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/e77625ad44.js" crossorigin="anonymous"></script>
 
@@ -33,17 +34,15 @@
         <div class="headerTop">
             <a href="https://www.instagram.com/lareina.libros" target="_blank"></a><span><i class="fa-brands fa-instagram-square fa-xl"></i></span>
             <a href="https://www.facebook.com/lareinalibros" target="_blank"><span><i class="fa-brands fa-facebook-square fa-xl"></i></span></a>
-        </div>
+        </div> <!--end of top of header-->
         <div class="headerBanner">
             <div class="bannerImage">
                 <a href="index.html"><img src="./images/darkBannerLogo.png" alt="banner logo"></a>
             </div> <!--end of banner image container-->
             <div class="bannerButtons">
-                <ul>
-                    <li class="accountLogin"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</li>
-                    <li class="myAccount"><i class="fa-solid fa-house"></i> Mi cuenta</li>
-                    <li class="shopCart"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</li>
-                </ul>
+                    <a class="bannerBtn" id="accountLogin" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a>
+                    <a class="bannerBtn" id="myAccount" href="#"><i class="fa-solid fa-house"></i> Mi cuenta</a>
+                    <a class="bannerBtn" id="shopCart" href="#"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</a>
             </div> <!--end of banner buttons-->
             <div class="bannerSearch"> <!--only for large devices-->
                 <input type="text" placeholder="Ingresa título, autor o palabra clave">
@@ -75,8 +74,8 @@
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <div class="dropdownLinks" id="dropdownLinks">
-                        <a href="#">Novedades</a>
-                        <a href="#">Populares</a>
+                        <a href="#new">Novedades</a>
+                        <a href="#popular">Populares</a>
                     </div>
                 </div>
             </li>
@@ -112,7 +111,7 @@
             <div class="sliderBtn sliderBtnRight" id="btnRight"><i class="fa-solid fa-angle-right"></i></div>
             <div class="sliderBtn sliderBtnLeft" id="btnLeft"><i class="fa-solid fa-angle-left"></i></div>
         </div> <!--end of slider container-->
-        <article class="booksArticle">
+        <article class="booksArticle" id="new">
             <div class="booksText">
                 <h3>Novedades</h3>
                 <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
@@ -128,7 +127,7 @@
                 </ul>
             </div> <!--end of books container-->
         </article>
-        <article class="booksArticle">
+        <article class="booksArticle" id="popular">
             <div class="booksText">
                 <h3>Populares</h3>
                 <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
@@ -136,11 +135,11 @@
             <div class="booksContainer">
                 <ul class="booksList">
                     <li class="bookThumbnail"><img src="./images/portadaAleph.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookTwo"><img src="./images/portadaSueno.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookThree"><img src="./images/portadaJuguete.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookFour"><img src="./images/portadaMisteriosa.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookFive"><img src="./images/portadaRayuela.jpg" alt="book thumbnail"></li>
-                    <li class="bookThumbnail bookSix"><img src="./images/portadaSobre.jpg" alt="book thumbnail"></li>
+                    <li class="bookThumbnail"><img src="./images/portadaSueno.jpg" alt="book thumbnail"></li>
+                    <li class="bookThumbnail"><img src="./images/portadaJuguete.jpg" alt="book thumbnail"></li>
+                    <li class="bookThumbnail"><img src="./images/portadaMisteriosa.jpg" alt="book thumbnail"></li>
+                    <li class="bookThumbnail"><img src="./images/portadaRayuela.jpg" alt="book thumbnail"></li>
+                    <li class="bookThumbnail"><img src="./images/portadaSobre.jpg" alt="book thumbnail"></li>
                 </ul>
             </div> <!--end of books container-->
         </article>

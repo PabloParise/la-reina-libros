@@ -1,4 +1,4 @@
-/* Note: Mobile-first design 
+/* Mobile-first design */
 
 
 /* -----------
@@ -77,30 +77,21 @@ header {
 
 .bannerButtons {
     grid: butt;
-}
-
-.bannerButtons ul {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
 }
 
-.bannerButtons li {
+.bannerBtn {
     padding: 0.4em 1em;
-    border-radius: 2%;
     color: white;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;;
     font-size: 1rem;
+    transition: all 0.2s ease;
 }
 
-.bannerButtons .fa-solid {
+.bannerBtn:hover{
     color: #bbdfc4;
-	transition: all 0.2s ease;
-}
-
-.bannerButtons .fa-solid:hover {
-    color: #ffffff;
 }
 
 .bannerSearch {
@@ -352,21 +343,6 @@ section {
 
 .booksList img{
     margin-right: 0.1rem;
-}
-
-.booksList:last-child{
-    margin-right: 0;
-}
-
-.bookThumbnail:hover {
-    z-index: 2;
-    transform: scale(1.1);
-    transition: .2s;
-}
-
-.bookThumbnail:not(:hover) {
-    transform: scale(1);
-    transition: .2s;
 }
 
 .booksLink {
@@ -739,18 +715,19 @@ MEDIA QUERIES
         height: 150px;
     }
 
-    .bannerButtons ul {
+    .bannerButtons {
         flex-direction: row;
+        padding-left: 0;
+        margin-left: 0;
     }
 
-    .bannerButtons li {
-        margin: 0.08em 0.25em;
-        padding: 1.2em 1em;
+    .bannerBtn {
+        margin: 0.08rem 1.5rem;
+        padding: 0;
         font-size: 1.1em;
     }
 
-    .bannerButtons li:first-child {
-        padding-left: 0;
+    .bannerBtn:first-child {
         margin-left: 0;
     }
 
@@ -909,21 +886,6 @@ MEDIA QUERIES
         height: 150px;
     }
 
-    .bannerButtons ul {
-        flex-direction: row;
-    }
-
-    .bannerButtons li {
-        margin: 0.08em 0.25em;
-        padding: 1.2em 1em;
-        font-size: 1.1em;
-    }
-
-    .bannerButtons li:first-child {
-        padding-left: 0;
-        margin-left: 0;
-    }
-
     .bannerSearch {
         grid: sear;
         display: flex;
@@ -1012,6 +974,14 @@ MEDIA QUERIES
 
     .bookList img{
         width: auto;
+    }
+
+    .bookThumbnail {
+        transition: all 0.2s;
+    }
+    
+    .bookThumbnail:hover {
+        transform: scale(1.1);
     }
 
     .aboutContainer {
