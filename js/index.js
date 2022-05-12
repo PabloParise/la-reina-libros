@@ -87,6 +87,7 @@ function handleVal() {
 
 function naElem() {
     alert("Elemento no disponible");
+    return false;
   };
 
 //------Slider infinite effect------

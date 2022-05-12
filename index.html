@@ -46,7 +46,7 @@
             </div> <!--end of banner buttons-->
             <div class="bannerSearch"> <!--only for large devices-->
                 <input type="text" placeholder="Ingresa título, autor o palabra clave">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button onclick="return naElem()"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div> <!--end of banner search-->
         </div> <!--end of banner-->
     </header>
@@ -62,7 +62,7 @@
             <a class="smallLogo" id="smallLogo" href="index.html"><img src="./images/navbarLogo.png" alt="LRL Logo"></a>
             <div class="smallSearch">
                 <input type="text" placeholder="Ingresa título, autor o palabra clave">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button onclick="return naElem()"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div> <!--end of nav search-->
         </div> <!--end of nav small-->
         <ul class="navbarList" id="navbarList">
@@ -114,7 +114,7 @@
         <article class="booksArticle" id="popular">
             <div class="booksText">
                 <h3>Populares</h3>
-                <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
+                <!-- <a class="booksLink" href="books.html" target="_blank">Ver todo</a> -->   
             </div> <!--end of books text-->
             <div class="booksContainer">
                 <ul class="booksList">
@@ -130,7 +130,7 @@
         <article class="booksArticle" id="new">
             <div class="booksText">
                 <h3>Novedades</h3>
-                <a class="booksLink" href="books.html" target="_blank">Ver todo</a>    
+                <!-- <a class="booksLink" href="books.html" target="_blank">Ver todo</a> -->   
             </div> <!--end of books text-->
             <div class="booksContainer">
                 <ul class="booksList">
@@ -197,8 +197,8 @@
             </div> <!--end of account div-->
             <!--facebook page embed-->
             <iframe 
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flareinalibros&tabs=header&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                width="340" height="130" style="border:none;overflow:hidden;margin:1rem 0" 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flareinalibros&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                width="340" height="500" style="border:none;overflow:hidden;margin:1rem 0" 
                 scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
             </iframe>
         </div> <!--end of side container-->
