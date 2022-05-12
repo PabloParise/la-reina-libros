@@ -83,6 +83,12 @@ function handleVal() {
   }
 };
 
+//------Not available elements alert------
+
+function naElem() {
+    alert("Elemento no disponible");
+  };
+
 //------Slider infinite effect------
 
 const $btnRight = document.getElementById("btnRight");
