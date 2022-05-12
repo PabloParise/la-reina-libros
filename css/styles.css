@@ -416,6 +416,14 @@ cursor: pointer;
     width: 100%;
 }
 
+.largeImg {
+    display: none;
+}
+
+.smallImg {
+    display: block;
+}
+
 
 /* -----------
     ASIDE
@@ -1039,6 +1047,14 @@ MEDIA QUERIES
 
     .aboutContainer {
         flex-direction: row;
+    }
+
+    .largeImg {
+        display: block;
+    }
+    
+    .smallImg {
+        display: none;
     }
 
     /*----------ASIDE----------*/
