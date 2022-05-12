@@ -66,6 +66,23 @@ for (let i = 0; i < $accordionArr.length; i++) {
   });
 };
 
+//------Contact form validation------
+
+function handleVal() {
+  let $fSelect = document.forms["form"]["subject"].value;
+  let $fName = document.forms["form"]["name"].value;
+  let $testRegex = /[0-9]/;
+  if($fSelect === "placeholder") {
+    alert("Seleccione un Asunto");
+    return false;
+  } else if($testRegex.test($fName)) {
+    alert("El nombre no es válido");
+    return false;
+  } else {
+    return confirm("¿Desea enviar?")
+  }
+};
+
 //------Slider infinite effect------
 
 const $btnRight = document.getElementById("btnRight");

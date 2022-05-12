@@ -91,14 +91,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam veniam consectetur nam eaque labore voluptate cumque voluptatibus provident officiis accusantium praesentium aliquid ullam unde explicabo excepturi harum commodi! Incidunt.
                 Nihil eum voluptas explicabo. Veniam, qui natus corporis totam laborum perspiciatis, aliquid explicabo laudantium blanditiis officiis magnam, aut ea consectetur earum hic aliquam. Doloribus sint quisquam assumenda delectus voluptas aut.</p>
             </div>
-            <form class="form" action="">
+            <form class="form" name="form" action="" onsubmit="return handleVal()">
                 <div class="formElem">
                     <label for="subject">Asunto</label>
-                    <select name="subject" id="" required>
+                    <select name="subject" id="">
+                        <option value="placeholder" disabled selected="">Seleccione una opción</option>
                         <option value="info">Información libros</option>
                         <option value="shop">Mi compra online</option>
                         <option value="web">Problema con la web</option>
-                        <option value="suggestion">Sugerencia</option>
+                        <option value="suggest">Sugerencia</option>
                         <option value="other">Otros</option>
                     </select>
                 </div>
