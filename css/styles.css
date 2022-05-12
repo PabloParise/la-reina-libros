@@ -90,10 +90,6 @@ header {
     transition: all 0.2s ease;
 }
 
-.bannerBtn:hover{
-    color: #bbdfc4;
-}
-
 .bannerSearch {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -966,6 +962,10 @@ MEDIA QUERIES
         height: 2.25rem;
         background-color: #bbdfc4;
         border: 2px solid #bbdfc4;
+    }
+
+    .bannerBtn:hover{
+        color: #bbdfc4;
     }
 
     /*----------NAVBAR----------*/
