@@ -127,12 +127,6 @@ header {
     color: black;
 }
 
-.navbarLink:hover{
-    background-color: #6ca7b5;
-    color: white;
-    transition: all 0.2s ease;
-}
-
 .dropdown {
     border-top: 1px solid rgba(0,0,0,0.2);
 }
@@ -163,18 +157,6 @@ header {
     color: rgb(50, 50, 50);
     font-size: 1rem;
     border-top: 1px solid rgba(0,0,0,0.1);
-}
-
-.dropdownLinks a:hover {
-    background-color: #cccccc;
-    color: white;
-    transition: all 0.2s ease;
-}
-
-.dropdown:hover .dropdownButton {
-    background-color: #6ca7b5;
-    color: white;
-    transition: all 0.2s ease;
 }
 
 .active {
@@ -298,10 +280,6 @@ section {
     transition: color 0.2s ease;
 }
 
-.sliderBtn:hover {
-    color: white;
-}
-
 .sliderBtnRight {
     right: .3rem;
 }
@@ -344,10 +322,6 @@ section {
 .booksLink {
     color: #565656;
     transition: 0.2s ease;
-}
-
-.booksLink:hover {
-    color: #bbdfc4
 }
 
 .bookThumbnail img {
@@ -503,10 +477,6 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.footerContainer a:hover {
-    color: #565656;
-}
-
 .footerAbout {
     grid-area: about;
 }
@@ -523,6 +493,7 @@ footer {
     grid-area: soc;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footerSocial .fa-stack .fa-stack-1x {
@@ -533,14 +504,6 @@ footer {
 .footerSocial .fa-stack .fa-stack-2x {
 	color: #565656;
 	transition: all 0.2s ease;
-}
-
-.footerSocial .fa-stack:hover .fa-stack-1x {
-	color: #565656;
-}
-
-.footerSocial .fa-stack:hover .fa-stack-2x {
-    color: #ffffff;
 }
 
 .footerCopyright {
@@ -562,12 +525,6 @@ footer {
     align-items: center;
     font-family: Outfit, "Open Sans", sans-serif;
     font-size: 1.2em;
-}
-
-.developerInfo:hover {
-    color: #2c494d;
-    cursor: pointer;
-    transition: all 0.2s ease;
 }
 
 .developerInfo img {
@@ -795,12 +752,6 @@ MEDIA QUERIES
         border-top: none;
     }
 
-    .navbarLink:hover{
-        background-color: #6ca7b5;
-        color: white;
-        transition: all 0.2s ease;
-    }
-
     .dropdown {
         margin: 0 0.5em;
     }
@@ -952,12 +903,28 @@ MEDIA QUERIES
         padding: 1em 2em;
     }
 
+    .navbarLink:hover{
+        color: white;
+        transition: all 0.2s ease;
+    }
+
     .dropdown {
         margin: 0 1.5em;
     }
 
     .dropdownButton {
         padding: 1em 2em;
+    }
+
+    .dropdownLinks a:hover {
+        background-color: #cccccc;
+        color: white;
+        transition: all 0.2s ease;
+    }
+    
+    .dropdown:hover .dropdownButton {
+        color: white;
+        transition: all 0.2s ease;
     }
 
     .navbarLogo {
@@ -996,6 +963,14 @@ MEDIA QUERIES
     
     .smallSlider{
         display: none;
+    }
+
+    .sliderBtn:hover {
+        color: white;
+    }
+
+    .booksLink:hover {
+        color: #bbdfc4
     }
 
     .bookList img{
@@ -1077,10 +1052,27 @@ MEDIA QUERIES
         justify-items: center;
     }
 
+    .footerContainer a:hover {
+        color: #565656;
+    }
+
+    .footerSocial .fa-stack:hover .fa-stack-1x {
+        color: #565656;
+    }
+    
+    .footerSocial .fa-stack:hover .fa-stack-2x {
+        color: #ffffff;
+    }
+
     .footerCopyright {
         flex-direction: row;
         padding: 1em 4em;
         font-size: 1rem;
+    }
+
+    .developerInfo:hover {
+        color: #2c494d;
+        transition: all 0.2s ease;
     }
 
     /*----------FORM----------*/

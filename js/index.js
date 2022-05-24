@@ -148,7 +148,7 @@ const $largeSlider = document.getElementById("largeSlider");
 let $largeImage = document.querySelectorAll(".large");
 let $largeImageLast = $largeImage[$largeImage.length-1];
 
-$largeSlider.insertAdjacentElement("afterbegin", $largeImageLast); //Place the last slider image in the beggining of the slider (to get the infinite slider effect)
+$largeSlider.insertAdjacentElement("afterbegin", $largeImageLast); 
 
 function largeRight() {
   let $largeImageFirst = document.querySelectorAll(".large")[0];
